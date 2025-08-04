@@ -20,8 +20,8 @@ cache:
 
 twig:
   cache: true
-  debug: false
-  auto_reload: false
+  debug: true
+  auto_reload: true
   autoescape: true
 
 assets:
@@ -33,12 +33,12 @@ assets:
   js_minify: true
 
 errors:
-  display: false
+  display: true
   log: true
 
 debugger:
-  enabled: false
-  twig: false
+  enabled: true
+  twig: true
   shutdown:
     close_connection: true
 
