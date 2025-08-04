@@ -1,7 +1,12 @@
-title: Grav
+title: Silbele Cosmetics
 author:
-  name: Joe Bloggs
-  email: 'joe@example.com'
+  name: Silbele Team
+  email: 'hello@silbele.com'
 metadata:
-    description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+    description: 'Premium cosmetics and skincare products. Your beauty, redefined with Silbele Cosmetics.'
+taxonomies:
+    category: blog
+    tag: blog
+blog:
+    route: /blog
 

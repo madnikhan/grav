@@ -1,50 +1,47 @@
-# Composer
-.composer
-vendor/*
-!*/vendor/*
+# Grav specific
+/cache/*
+/logs/*
+/tmp/*
+/backup/*
+/user/data/*
+/user/accounts/*
+/user/config/security.yaml
 
-# Sass
-.sass-cache
-
-# Grav Specific
-backup/*
-!backup/.*
-cache/*
-!cache/.*
-assets/*
-!assets/.*
-logs/*
-!logs/.*
-images/*
-!images/.*
-user/accounts/*
-!user/accounts/.*
-user/data/*
-!user/data/.*
-user/plugins/*
-!user/plugins/.*
-user/themes/*
-!user/themes/.*
-user/**/config/security.yaml
-
-# Environments
-.env
-.gravenv
-
-# OS Generated
-.DS_Store*
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
 ehthumbs.db
-Icon?
 Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
 *.swp
+*.swo
+*~
 
-# phpstorm
-.idea/*
+# Composer
+/vendor/
+composer.phar
 
-# testing stuff
-tests/_output/*
-tests/_support/_generated/*
-tests/cache/*
-tests/error.log
-system/templates/testing/*
-/user/config/versions.yaml
+# Node modules (if using any build tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Temporary files
+*.tmp
+*.temp
