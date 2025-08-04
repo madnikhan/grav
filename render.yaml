@@ -2,11 +2,7 @@ services:
   - type: web
     name: silbele-cosmetics
     env: php
-    buildCommand: |
-      php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-      php composer-setup.php --install-dir=/usr/local/bin --filename=composer
-      php -r "unlink('composer-setup.php');"
-      composer install --no-dev --optimize-autoloader
+    buildCommand: composer install --no-dev --optimize-autoloader
     startCommand: php -S 0.0.0.0:$PORT system/router.php
     envVars:
       - key: PHP_VERSION
